@@ -5,12 +5,18 @@
 Все медитации длиной 5–10 минут от **Toki Well-being** и **Milky Vegan Yoga**.  
 Бот предоставляет удобную клавиатуру с кнопками для навигации.
 
+## 🐍 Требования
+
+- Python 3.10 или выше
+- Аккаунт Telegram
+- YouTube-доступ
+
 ## 🚀 Установка
 
 1. Клонируйте репозиторий:
 
 ```bash
-git clone <ссылка_на_репозиторий>
+git clone https://github.com/TinaUma/telegram-meditation-bot
 cd telegram-meditation-bot
 ```
 
@@ -19,6 +25,7 @@ cd telegram-meditation-bot
 ```bash
 python -m venv .venv
 .venv\Scripts\activate  # Для Windows
+source .venv/bin/activate  # Для macOS/Linux
 ```
 
 3. Установите зависимости:
@@ -29,10 +36,10 @@ pip install -r requirements.txt
 
 4. Создайте бота в Telegram через [@BotFather](https://t.me/BotFather) и получите токен.
 
-5. Создайте файл `.env` в корне проекта и укажите токен:
+5. Скопируйте файл `.env.example` и переименуйте его в `.env`:
 
-```env
-TELEGRAM_BOT_TOKEN=ваш_токен
+```bash
+cp .env.example .env  # или вручную скопируйте содержимое
 ```
 
 6. Запустите бота:
@@ -56,14 +63,29 @@ python python_telegram-bot.py
 
 ✨ *Наслаждайтесь моментом тишины и заботы о себе.*
 
-
-## Пример работы
+## 🖼️ Примеры работы
 
 ### Начало работы (кнопка "СТАРТ")
-![Начало работы](screenshots/ipad%20start.jpg)
+![Начало работы](screenshots/ipad_start.jpg)
 
 ### Работа на iPad
 ![Работа на iPad](screenshots/ipad.jpg)
 
 ### Работа на iPhone
 ![Работа на iPhone](screenshots/iphone.jpg)
+
+## 📄 Файл .env.example
+
+```env
+# Telegram API token
+TELEGRAM_BOT_TOKEN=your_bot_token_here
+
+# Настроения (можно адаптировать список)
+MOODS=Тревожно,Грустно,Спокойно
+
+# Ссылки на медитации (по одному для каждого настроения)
+YOUTUBE_LINK_TREVOGA=https://youtube.com/example1
+YOUTUBE_LINK_GRUST=https://youtube.com/example2
+YOUTUBE_LINK_SPOKOJNO=https://youtube.com/example3
+```
+
