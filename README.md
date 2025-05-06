@@ -88,4 +88,4 @@ YOUTUBE_LINK_TREVOGA=https://youtube.com/example1
 YOUTUBE_LINK_GRUST=https://youtube.com/example2
 YOUTUBE_LINK_SPOKOJNO=https://youtube.com/example3
 ```
-
+**Примечание**: Бот работает локально на вашем компьютере. Чтобы он был доступен 24/7, нужно развернуть его на сервере (например, Heroku). Для разворачивания обратитесь к документации хостинга.
